@@ -18,15 +18,15 @@ on:
       patch-user-email:
         description: 'Fake registered email (for fake FE account)'
         required: true
-        default: 'long@telerik.com'
+        default: 'cloudbox.pk@gmail.com'
       patch-user-firstName:
         description: 'Fake registered first name (for fake FE account)'
         required: true
-        default: 'Long'
+        default: 'NAVEED'
       patch-user-lastName:
         description: 'Fake registered last name (for fake FE account)'
         required: true
-        default: 'Wang'
+        default: 'NOOR KHAN'
       patch-user-country-code:
         description: 'Fake registered country code (for fake FE account) ; Ex: 86'
         required: true
@@ -102,6 +102,7 @@ jobs:
 
     env:
       NODE_JS_VERSION: 23.1.0
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
     steps:
       - uses: actions/checkout@v4
